@@ -122,7 +122,6 @@ export default function AboutPageClient() {
                   src="/team/shaik-maneesha.jpg" 
                   alt="Shaik Maneesha" 
                   className="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 ease-in-out mix-blend-luminosity group-hover:mix-blend-normal"
-                  onError={(e) => { e.currentTarget.src = "https://via.placeholder.com/600x800/020617/334155?text=Shaik+Maneesha" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#050816] via-[#050816]/60 to-transparent" />
               </div>
@@ -141,7 +140,6 @@ export default function AboutPageClient() {
                   src="/team/gurram-hemanth.jpg" 
                   alt="Gurram Hemanth" 
                   className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 ease-in-out mix-blend-luminosity group-hover:mix-blend-normal"
-                  onError={(e) => { e.currentTarget.src = "https://via.placeholder.com/600x800/020617/334155?text=Gurram+Hemanth" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#050816] via-[#050816]/40 to-transparent" />
               </div>
@@ -173,7 +171,6 @@ export default function AboutPageClient() {
                   src="/team/kallepalli-lakshmi.jpg" 
                   alt="Kallepalli Lakshmi Devi" 
                   className="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 ease-in-out mix-blend-luminosity group-hover:mix-blend-normal"
-                  onError={(e) => { e.currentTarget.src = "https://via.placeholder.com/600x800/020617/334155?text=Kallepalli+Lakshmi+Devi" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#050816] via-[#050816]/60 to-transparent" />
               </div>
