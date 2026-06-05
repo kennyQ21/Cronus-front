@@ -17,12 +17,7 @@ export default function Logo({
   height = 'auto' 
 }: LogoProps) {
   
-  // In a real app with next-themes, 'auto' would rely on CSS variables or a theme provider. 
-  // We use currentColor for the main text so the parent can control it via text-white or text-black.
-  // We use the brand teal for the hyphen and 'Software Labs' in light mode, and muted slate in dark mode.
-  const textColor = variant === 'monochrome' ? 'currentColor' : 'currentColor';
-  const brandTeal = variant === 'monochrome' ? 'currentColor' : '#328895';
-  const subTextColor = variant === 'monochrome' ? 'currentColor' : '#64748B';
+
 
   const isAnimated = variant === 'animated';
   const isMonochrome = variant === 'monochrome';
