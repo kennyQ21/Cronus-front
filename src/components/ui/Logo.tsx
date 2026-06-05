@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 
 interface LogoProps {
   variant?: 'primary' | 'horizontal' | 'compact' | 'icon' | 'monochrome' | 'animated';
@@ -17,101 +18,20 @@ export default function Logo({
   height = 'auto' 
 }: LogoProps) {
   
-
-
-  const isAnimated = variant === 'animated';
-  const isMonochrome = variant === 'monochrome';
-
-  // Exact Source of Truth Colors
-  const textColor = variant === 'monochrome' ? 'currentColor' : '#4597A5';
-  const subTextColor = variant === 'monochrome' ? 'currentColor' : '#4597A5';
-  const orange = isMonochrome ? 'currentColor' : '#FF8000';
-  const blue = isMonochrome ? 'currentColor' : '#14AAF5';
-  const green = isMonochrome ? 'currentColor' : '#7AD653';
-
-  // Triangle SVG paths (perfect equilateral pointing UP centered at 0,0)
-  // Base length 14, Height 12.12
-  const trianglePath = "M 0,-8 L 9,8 L -9,8 Z";
-
-  const Triangles = () => (
-    <g className="logo-triangles">
-      {/* Blue Triangle (Left) */}
-      <path 
-        d={trianglePath} 
-        fill={blue} 
-        transform="translate(132, 18) rotate(30)" 
-        className={`origin-[132px_18px] transition-transform duration-500 hover:scale-110 ${isAnimated ? 'animate-pulse' : ''}`}
-        style={isAnimated ? { animationDelay: '0ms' } : {}}
-      />
-      {/* Green Triangle (Right) */}
-      <path 
-        d={trianglePath} 
-        fill={green} 
-        transform="translate(148, 24) rotate(-20) scale(1.15)" 
-        className={`origin-[148px_24px] transition-transform duration-500 hover:scale-110 ${isAnimated ? 'animate-pulse' : ''}`}
-        style={isAnimated ? { animationDelay: '200ms' } : {}}
-      />
-      {/* Orange Triangle (Top) */}
-      <path 
-        d={trianglePath} 
-        fill={orange} 
-        transform="translate(145, 6) rotate(145) scale(1.1)" 
-        className={`origin-[145px_6px] transition-transform duration-500 hover:scale-110 ${isAnimated ? 'animate-pulse' : ''}`}
-        style={isAnimated ? { animationDelay: '400ms' } : {}}
-      />
-    </g>
-  );
-
-  // If just the icon is requested (Triangles only)
-  if (variant === 'icon') {
-    return (
-      <svg width={width} height={height} viewBox="130 -5 40 45" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
-        <Triangles />
-      </svg>
-    );
-  }
-
+  // Since we are using the exact image provided by the user, we just render it directly.
   return (
-    <svg 
-      width={width} 
-      height={height} 
-      viewBox="0 0 180 50" 
-      className={className} 
-      fill="none" 
-      xmlns="http://www.w3.org/2000/svg"
+    <div 
+      className={`relative inline-flex items-center justify-center ${className} ${variant === 'animated' ? 'hover:scale-105 transition-transform duration-500' : ''}`}
+      style={{ width, height: height === 'auto' ? 'auto' : height }}
     >
-      <g>
-        {/* Wordmark */}
-        <text 
-          x="0" 
-          y="34" 
-          fontFamily="'Quicksand', 'Nunito', 'Varela Round', sans-serif" 
-          fontSize="42" 
-          fontWeight="500" 
-          fill={textColor} 
-          letterSpacing="0.02em"
-        >
-          i-cronus
-        </text>
-        
-        {/* Sub-brand */}
-        {variant !== 'compact' && (
-          <text 
-            x="36" 
-            y="52" 
-            fontFamily="'Quicksand', 'Nunito', 'Varela Round', sans-serif" 
-            fontSize="14" 
-            fontWeight="400" 
-            fill={subTextColor} 
-            letterSpacing="0.03em" 
-          >
-            Software Labs
-          </text>
-        )}
-
-        {/* Triangles Symbol */}
-        <Triangles />
-      </g>
-    </svg>
+      <Image
+        src="/logo.png"
+        alt="i-Cronus Software Labs"
+        width={typeof width === 'number' ? width : 240}
+        height={typeof height === 'number' ? height : 60}
+        className="w-full h-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.05)]"
+        priority
+      />
+    </div>
   );
 }
