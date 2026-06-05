@@ -193,7 +193,7 @@ export default function CareersPageClient() {
                 <span className="text-[#00D4FF] font-mono text-[10px] tracking-widest uppercase mb-4 block">Early Careers</span>
                 <h2 className="font-display text-4xl font-bold uppercase mb-6">Launch Your Engineering Career</h2>
                 <p className="text-[#A0A0B8] text-sm leading-relaxed mb-8">
-                  Our 3–6 month intensive internship program is designed to transition academic talent into production-ready enterprise engineers. You won't be fetching coffee or fixing typos; you will be pushing code to staging on day one.
+                  Our 3–6 month intensive internship program is designed to transition academic talent into production-ready enterprise engineers. You won&apos;t be fetching coffee or fixing typos; you will be pushing code to staging on day one.
                 </p>
                 
                 <div className="space-y-4 mb-10">
