@@ -3,7 +3,6 @@
 import React, { useEffect } from "react";
 import Hero from "@/components/sections/Hero";
 import TransformationGap from "@/components/sections/TransformationGap";
-import IntelligentEnterprise from "@/components/sections/IntelligentEnterprise";
 import WhatWeBuild from "@/components/sections/WhatWeBuild";
 import ProcessClarity from "@/components/sections/ProcessClarity";
 import HowWeWork from "@/components/sections/HowWeWork";
@@ -26,7 +25,6 @@ export default function Home() {
     <div className="flex flex-col">
       <Hero />
       <TransformationGap />
-      <IntelligentEnterprise />
       <WhatWeBuild />
       <ProcessClarity />
       <HowWeWork />

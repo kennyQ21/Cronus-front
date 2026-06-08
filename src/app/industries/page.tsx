@@ -121,10 +121,8 @@ export default function IndustriesPage() {
   }, [setActiveEngine, setActiveIndustryLayer]);
 
   return (
-    <div className="relative">
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2">
-        <div className="hidden lg:block h-screen sticky top-0" />
-        
+    <div className="relative pt-24 pb-16">
+      <div className="relative z-10 max-w-4xl mx-auto w-full px-6">
         <div className="flex flex-col">
            <div className="pt-32 pb-12 border-b border-white/10 mb-8">
               <h1 className="font-display text-5xl md:text-6xl font-bold text-white leading-[1.0] mb-6">

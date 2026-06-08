@@ -70,7 +70,7 @@ export default function SolutionsPage() {
 
   return (
     <div className="relative pt-24 pb-16">
-      <div className="relative z-20 max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-4xl mx-auto w-full px-6">
         
         <div className="mb-12 border-b border-white/10 pb-8">
           <span className="text-[#00D4FF] font-mono text-sm tracking-widest uppercase mb-4 block">Cross-Functional Programs</span>
@@ -82,9 +82,9 @@ export default function SolutionsPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8">
           {solutions.map((sol) => (
-            <div key={sol.id} className="glass-card p-8 border border-white/10 hover:border-[#00D4FF]/30 transition-colors flex flex-col">
+            <div key={sol.id} className="bg-[#050816]/60 backdrop-blur-md p-8 border border-white/10 hover:border-[#00D4FF]/30 transition-colors flex flex-col rounded-xl">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded border border-[#00D4FF]/30 bg-[#00D4FF]/5 flex items-center justify-center">
                   {sol.icon}

@@ -83,7 +83,7 @@ export default function ContactPage() {
           <div className="flex flex-col h-full">
             <h2 className="font-display text-xl font-bold text-white uppercase mb-6 flex items-center gap-3 border-b border-white/10 pb-4">
               <span className="w-1.5 h-1.5 bg-[#10B981] rounded-full"></span>
-              Bengaluru Headquarters
+              Bengaluru Office
             </h2>
             <div className="bg-[#050816] border border-white/5 p-6 rounded-xl space-y-5 flex-grow">
               <div className="flex items-start gap-3">
