@@ -90,6 +90,83 @@ export default function CareersPageClient() {
             <Link href={ERP_LINK} target="_blank" rel="noopener noreferrer" className="btn-outline inline-flex justify-center items-center gap-2">
               Apply Now (General)
             </Link>
+            <Link href={ERP_LINK} target="_blank" rel="noopener noreferrer" className="btn-outline inline-flex justify-center items-center gap-2 border-[#00D4FF]/30 text-[#00D4FF] hover:bg-[#00D4FF]/10">
+              Apply For Internship
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= INTERNSHIP PROGRAM ================= */}
+      <section className="py-24 px-6 bg-[#050816]">
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-[#020617] border border-[#00D4FF]/20 rounded-2xl p-8 lg:p-16 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-[#00D4FF]/5 blur-[100px] pointer-events-none" />
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
+              <div>
+                <span className="text-[#00D4FF] font-mono text-[10px] tracking-widest uppercase mb-4 block">Early Careers</span>
+                <h2 className="font-display text-4xl font-bold uppercase mb-6">Launch Your Engineering Career</h2>
+                <p className="text-[#A0A0B8] text-sm leading-relaxed mb-8">
+                  Our 3–6 month intensive internship program is designed to transition academic talent into production-ready enterprise engineers. You won&apos;t be fetching coffee or fixing typos; you will be pushing code to staging on day one.
+                </p>
+                
+                <div className="space-y-4 mb-10">
+                  <div className="bg-white/5 border border-white/10 p-4 rounded-lg flex justify-between items-center">
+                    <span className="text-sm font-bold uppercase tracking-wider">Software Eng Internship</span>
+                    <span className="text-[10px] font-mono text-[#00D4FF]">React / Node</span>
+                  </div>
+                  <div className="bg-white/5 border border-white/10 p-4 rounded-lg flex justify-between items-center">
+                    <span className="text-sm font-bold uppercase tracking-wider">AI Eng Internship</span>
+                    <span className="text-[10px] font-mono text-[#00D4FF]">Python / RAG</span>
+                  </div>
+                  <div className="bg-white/5 border border-white/10 p-4 rounded-lg flex justify-between items-center">
+                    <span className="text-sm font-bold uppercase tracking-wider">Cloud Eng Internship</span>
+                    <span className="text-[10px] font-mono text-[#00D4FF]">AWS / Docker</span>
+                  </div>
+                  <div className="bg-white/5 border border-white/10 p-4 rounded-lg flex justify-between items-center">
+                    <span className="text-sm font-bold uppercase tracking-wider">Data Eng Internship</span>
+                    <span className="text-[10px] font-mono text-[#00D4FF]">SQL / ETL</span>
+                  </div>
+                </div>
+
+                <Link href={ERP_LINK} target="_blank" rel="noopener noreferrer" className="btn-solid inline-flex justify-center items-center gap-2">
+                  Apply For Internship <ArrowRight size={16} />
+                </Link>
+              </div>
+
+              <div className="flex flex-col justify-center space-y-8">
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 rounded-full bg-[#10B981]/10 flex items-center justify-center shrink-0 border border-[#10B981]/30">
+                    <Database size={16} className="text-[#10B981]" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-sm uppercase mb-1">Real Enterprise Projects</h4>
+                    <p className="text-xs text-[#A0A0B8] leading-relaxed">Work on actual production systems, client deliverables, and internal tools. High-stakes exposure under strict mentorship.</p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 rounded-full bg-[#A78BFA]/10 flex items-center justify-center shrink-0 border border-[#A78BFA]/30">
+                    <Terminal size={16} className="text-[#A78BFA]" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-sm uppercase mb-1">Learning Roadmap & Mentorship</h4>
+                    <p className="text-xs text-[#A0A0B8] leading-relaxed">Weekly 1-on-1s with Principal Architects. Structured technology stack training spanning frontend, backend, and cloud topologies.</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 rounded-full bg-[#00D4FF]/10 flex items-center justify-center shrink-0 border border-[#00D4FF]/30">
+                    <Lock size={16} className="text-[#00D4FF]" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-sm uppercase mb-1">Selection & Timeline</h4>
+                    <p className="text-xs text-[#A0A0B8] leading-relaxed">Rigorous technical interview evaluating first-principles thinking. Top performers receive full-time offers upon graduation.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -182,79 +259,6 @@ export default function CareersPageClient() {
         </div>
       </section>
 
-      {/* ================= INTERNSHIP PROGRAM ================= */}
-      <section className="py-24 px-6 bg-[#050816]">
-        <div className="max-w-7xl mx-auto">
-          <div className="bg-[#020617] border border-[#00D4FF]/20 rounded-2xl p-8 lg:p-16 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-[#00D4FF]/5 blur-[100px] pointer-events-none" />
-            
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
-              <div>
-                <span className="text-[#00D4FF] font-mono text-[10px] tracking-widest uppercase mb-4 block">Early Careers</span>
-                <h2 className="font-display text-4xl font-bold uppercase mb-6">Launch Your Engineering Career</h2>
-                <p className="text-[#A0A0B8] text-sm leading-relaxed mb-8">
-                  Our 3–6 month intensive internship program is designed to transition academic talent into production-ready enterprise engineers. You won&apos;t be fetching coffee or fixing typos; you will be pushing code to staging on day one.
-                </p>
-                
-                <div className="space-y-4 mb-10">
-                  <div className="bg-white/5 border border-white/10 p-4 rounded-lg flex justify-between items-center">
-                    <span className="text-sm font-bold uppercase tracking-wider">Software Eng Internship</span>
-                    <span className="text-[10px] font-mono text-[#00D4FF]">React / Node</span>
-                  </div>
-                  <div className="bg-white/5 border border-white/10 p-4 rounded-lg flex justify-between items-center">
-                    <span className="text-sm font-bold uppercase tracking-wider">AI Eng Internship</span>
-                    <span className="text-[10px] font-mono text-[#00D4FF]">Python / RAG</span>
-                  </div>
-                  <div className="bg-white/5 border border-white/10 p-4 rounded-lg flex justify-between items-center">
-                    <span className="text-sm font-bold uppercase tracking-wider">Cloud Eng Internship</span>
-                    <span className="text-[10px] font-mono text-[#00D4FF]">AWS / Docker</span>
-                  </div>
-                  <div className="bg-white/5 border border-white/10 p-4 rounded-lg flex justify-between items-center">
-                    <span className="text-sm font-bold uppercase tracking-wider">Data Eng Internship</span>
-                    <span className="text-[10px] font-mono text-[#00D4FF]">SQL / ETL</span>
-                  </div>
-                </div>
-
-                <Link href={ERP_LINK} target="_blank" rel="noopener noreferrer" className="btn-solid inline-flex justify-center items-center gap-2">
-                  Apply For Internship <ArrowRight size={16} />
-                </Link>
-              </div>
-
-              <div className="flex flex-col justify-center space-y-8">
-                <div className="flex gap-4">
-                  <div className="w-10 h-10 rounded-full bg-[#10B981]/10 flex items-center justify-center shrink-0 border border-[#10B981]/30">
-                    <Database size={16} className="text-[#10B981]" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-sm uppercase mb-1">Real Enterprise Projects</h4>
-                    <p className="text-xs text-[#A0A0B8] leading-relaxed">Work on actual production systems, client deliverables, and internal tools. High-stakes exposure under strict mentorship.</p>
-                  </div>
-                </div>
-                
-                <div className="flex gap-4">
-                  <div className="w-10 h-10 rounded-full bg-[#A78BFA]/10 flex items-center justify-center shrink-0 border border-[#A78BFA]/30">
-                    <Terminal size={16} className="text-[#A78BFA]" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-sm uppercase mb-1">Learning Roadmap & Mentorship</h4>
-                    <p className="text-xs text-[#A0A0B8] leading-relaxed">Weekly 1-on-1s with Principal Architects. Structured technology stack training spanning frontend, backend, and cloud topologies.</p>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <div className="w-10 h-10 rounded-full bg-[#00D4FF]/10 flex items-center justify-center shrink-0 border border-[#00D4FF]/30">
-                    <Lock size={16} className="text-[#00D4FF]" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-sm uppercase mb-1">Selection & Timeline</h4>
-                    <p className="text-xs text-[#A0A0B8] leading-relaxed">Rigorous technical interview evaluating first-principles thinking. Top performers receive full-time offers upon graduation.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>

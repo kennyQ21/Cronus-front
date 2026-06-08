@@ -34,6 +34,7 @@ export default function EnterpriseMap() {
         mapStyle={mapStyle}
         style={{ width: '100%', height: '100%' }}
         interactive={true}
+        attributionControl={false}
         {...(mapboxToken ? { mapboxAccessToken: mapboxToken } : {})}
       >
         <NavigationControl position="bottom-right" showCompass={false} />
@@ -44,16 +45,22 @@ export default function EnterpriseMap() {
           latitude={BENGALURU_OFFICE.coords[1]}
           anchor="center"
         >
-          <div className="relative flex items-center justify-center w-8 h-8 group-marker cursor-pointer">
+          <a 
+            href={`https://maps.google.com/?q=${BENGALURU_OFFICE.coords[1]},${BENGALURU_OFFICE.coords[0]}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative flex items-center justify-center w-8 h-8 group-marker cursor-pointer"
+          >
             <div className="absolute w-6 h-6 bg-[#00D4FF] rounded-full animate-ping opacity-60" />
             <div className="absolute w-2 h-2 rounded-full shadow-[0_0_10px_currentColor] bg-[#00D4FF] text-[#00D4FF]" />
             
             {/* Persistent Tooltip */}
-            <div className="absolute -top-8 whitespace-nowrap bg-[#020617]/90 border border-white/10 px-3 py-1.5 rounded text-[10px] font-mono tracking-widest text-white shadow-xl flex items-center gap-2">
+            <div className="absolute -top-8 whitespace-nowrap bg-[#020617]/90 border border-white/10 px-3 py-1.5 rounded text-[10px] font-mono tracking-widest text-white shadow-xl flex items-center gap-2 group-hover:border-[#00D4FF]/50 transition-colors">
               <span className="w-1.5 h-1.5 rounded-full bg-[#00D4FF]" />
               {BENGALURU_OFFICE.name}
+              <span className="text-[#00D4FF] opacity-70 group-hover:opacity-100 transition-opacity ml-1">↗</span>
             </div>
-          </div>
+          </a>
         </Marker>
       </Map>
     </div>

@@ -38,7 +38,7 @@ export default function LeadershipTeam() {
             <img 
               src="/team/gurram-hemanth.jpg" 
               alt="Gurram Hemanth" 
-              className="w-full h-full object-cover object-top scale-125 transition-transform duration-700 ease-in-out group-hover:scale-[1.3]"
+              className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#050816] via-[#050816]/30 to-transparent" />
           </div>

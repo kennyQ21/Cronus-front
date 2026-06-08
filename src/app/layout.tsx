@@ -7,6 +7,7 @@ import GlobalCanvas from "@/components/canvas/GlobalCanvas";
 import Navbar from "@/components/global/Navbar";
 import FloatingWidgets from "@/components/global/FloatingWidgets";
 import FloatingContactDock from "@/components/ui/FloatingContactDock";
+import IraChatbot from "@/components/chat/IraChatbot";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -34,7 +35,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           </main>
         </SmoothScroll>
         <FloatingWidgets />
-        <FloatingContactDock />
+        <IraChatbot />
       </body>
     </html>
   );
